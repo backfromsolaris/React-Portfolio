@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-, "Components/About.tsx", "Components/Articles/Articles.tsx", "Components/Projects/Projects.tsx"  ]
+, "src/Components/About.tsx", "src/Components/Contact/Contact.tsx", "src/Components/Projects/Projects.tsx"  ]
 }
