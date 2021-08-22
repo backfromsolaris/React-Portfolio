@@ -2,8 +2,15 @@ import { Thumbnail } from "../Thumbnails";
 import marvel_image from '../../Assets/Images/marvel_homies.jpg';
 import parking_garage_image from '../../Assets/Images/parking-garage.jpg';
 import weather_api_image from '../../Assets/Images/weather-api.jpg';
+import { makeStyles } from "@material-ui/styles";
+
+const projectStyles = makeStyles({
+
+})
+
 
 export const Projects = () =>{
+    const classes = projectStyles();
     return(
         <div>
             <h1>Projects</h1>

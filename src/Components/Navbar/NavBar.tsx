@@ -1,9 +1,31 @@
-import { useStyles } from '../Home';
 import {Link} from 'react-router-dom';
+import { makeStyles } from "@material-ui/styles";
+
+const navStyles = makeStyles({
+  root:{
+    padding: '0',
+    margin: '0'
+  },
+  navigation:{
+    display: 'flex'
+  },
+  navbar_container:{
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: 'black'
+  },
+  nav_a:{
+    display: 'block',
+    padding: '1em',
+    color: 'white',
+    textDecoration: 'none'
+  }
+})
 
 
 export const Navbar = () =>{
-    const classes = useStyles();
+    const classes = navStyles();
     return(
         <div className={classes.root}>
             <nav>

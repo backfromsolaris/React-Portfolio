@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/styles";
+import alaska_portfolio from '../../Assets/Images/alaska_portfolio.jpg'
 
 export const useStyles = makeStyles({
     main:{
@@ -39,21 +40,7 @@ export const useStyles = makeStyles({
       padding: '0',
       margin: '0'
     },
-    navigation: {
-      display: 'flex'
-    },
-    navbar_container:{
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      backgroundColor: 'black'
-    },
-    nav_a:{
-      display: 'block',
-      padding: '1em',
-      color: 'white',
-      textDecoration: 'none'
-    }
+
   })
 
 
@@ -61,6 +48,7 @@ export const Home = () =>{
     const classes = useStyles();
     return(<main className={classes.main}>
     <div className={classes.main_text}>
+        <img src={alaska_portfolio} alt="" />
         <p className={classes.subTitle}>I'm Zach</p>
         
     </div>

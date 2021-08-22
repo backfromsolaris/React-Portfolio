@@ -12,13 +12,11 @@ export const Thumbnail = (props:Props) =>{
     const classes = useStyles();
     return(
         <div className={classes.project}>
-            <Link to={props.link}>
                 <div className={classes.project_image}>
                     <img className={classes.project_image} src={props.image} alt="Project Image" />
                 </div>
                 <div className={classes.project_title}>{props.title}</div>
                 <div className={classes.project_category}>{props.category}</div>                
-            </Link>
         </div>
     );
 }
