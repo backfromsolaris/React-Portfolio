@@ -14,7 +14,7 @@ ReactDOM.render(
       <Route exact path='/'>
         <Home />
       </Route>
-      <Route path='/Projects'>
+      <Route exact path='/Projects'>
         <Projects />
       </Route>
     </Router>

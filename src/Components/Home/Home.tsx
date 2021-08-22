@@ -10,6 +10,7 @@ export const useStyles = makeStyles({
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       position: 'absolute',
+      marginTop: '30vh'
     },
     main_text:{
       textAlign: 'center',
@@ -36,10 +37,6 @@ export const useStyles = makeStyles({
     project_category:{
       color: 'black'
     },
-    root:{
-      padding: '0',
-      margin: '0'
-    },
 
   })
 
@@ -50,7 +47,6 @@ export const Home = () =>{
     <div className={classes.main_text}>
         <img src={alaska_portfolio} alt="" />
         <p className={classes.subTitle}>I'm Zach</p>
-        
     </div>
 </main>
     )}
