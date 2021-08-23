@@ -4,22 +4,29 @@ import { makeStyles } from "@material-ui/styles";
 const navStyles = makeStyles({
   root:{
     padding: '0',
-    margin: '0'
+    margin: '0',
+    background: 'none'
   },
   navigation:{
-    display: 'flex'
+    display: 'flex',
+    background: 'none'
   },
   navbar_container:{
     display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: 'black'
+    justifyContent: 'flex-end',
+    background: 'none'
   },
   nav_a:{
+    marginTop: "3vh",
     display: 'block',
-    padding: '1em',
+    padding: '1em 2em',
     color: 'white',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    background: 'none'
+  },
+  item:{
+    background: 'none',
+    listStyleType: 'none'
   }
 })
 
@@ -28,19 +35,19 @@ export const Navbar = () =>{
     const classes = navStyles();
     return(
         <div className={classes.root}>
-            <nav>
+            <nav className={classes.root}>
                 <div className={classes.navbar_container}>
                     <ul className={classes.navigation}>
-                        <li>
+                        <li className={classes.item}>
                             <Link to='/' className={classes.nav_a}>Home</Link>
                         </li>                        
-                        <li>
+                        <li className={classes.item}>
                             <Link to='/About' className={classes.nav_a}>About</Link>
                         </li>
-                        <li>
+                        <li className={classes.item}>
                             <Link to='/Projects' className={classes.nav_a}>Projects</Link>
                         </li>
-                        <li>
+                        <li className={classes.item}>
                             <Link to='/Contact' className={classes.nav_a}>Contact</Link>
                         </li>
                     </ul>

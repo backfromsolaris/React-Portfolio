@@ -1,24 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import  { Home, Projects, Navbar } from './Components'
+import  { Home, Projects, Navbar, About, Contact } from './Components'
 import reportWebVitals from './reportWebVitals';
 import './styles.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-
-
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <Navbar />
-      <Route exact path='/'>
+    <React.StrictMode>
+      <Router>
+        <Navbar />
         <Home />
-      </Route>
-      <Route exact path='/Projects'>
-        <Projects />
-      </Route>
-    </Router>
-  </React.StrictMode>,
+        <Route exact path='/Projects'>
+          <Projects />
+        </Route>
+        <Route exact path='/About'>
+          <About />
+        </Route>
+        <Route exact path='/Contact'>
+          <Contact />
+        </Route>
+      </Router>
+    </React.StrictMode>,
   document.getElementById('root')
 );
 

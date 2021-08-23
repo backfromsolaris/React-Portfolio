@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 *,*::before,*::after{
     padding: 0;
     margin: 0;
     box-sizing: inherit;
-    background-color: black;
+    font-family: 'Merriweather', serif;
+    background-image: url(./Assets/Images/halibut_cove.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
 }
+
+/* form{
+    background: none;
+}
+
+#outlined-basic{
+    background: none;
+} */
