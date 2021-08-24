@@ -14,19 +14,15 @@ createStyles({
         right: '4vw',
         top: '25vh',
         color: 'white',
-        background: 'none'
         },
     header:{
         marginBottom: '5vh',
         color: 'white',
-        background: 'none'
     },
     inputs:{
-        background: 'none',
         color: 'white'
     },
     inputsMessage:{
-        background: 'none',
         color: 'white',
         lineHeight: '10vh',
         textAlign: 'start'

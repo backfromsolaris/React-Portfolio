@@ -10,12 +10,10 @@ const projectStyles = makeStyles({
         marginLeft: '5vw',
         marginRight: '25vw',
         width: '25vw',
-        background: 'none'
     },
     h2:{
         color: 'white',
         marginBottom: '5vh',
-        background: 'none'
     },
     grid_container:{
         display: 'grid',
@@ -24,11 +22,9 @@ const projectStyles = makeStyles({
         columnGap: '50px',
         rowGap: '5px',
         marginTop: '10vh',
-        background: 'none'
     },
     grid_item:{
         fontSize: '.9em',
-        background: 'none'
     }
 })
 

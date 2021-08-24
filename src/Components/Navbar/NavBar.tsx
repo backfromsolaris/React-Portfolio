@@ -5,16 +5,13 @@ const navStyles = makeStyles({
   root:{
     padding: '0',
     margin: '0',
-    background: 'none'
   },
   navigation:{
     display: 'flex',
-    background: 'none'
   },
   navbar_container:{
     display: 'flex',
     justifyContent: 'flex-end',
-    background: 'none'
   },
   nav_a:{
     marginTop: "3vh",
@@ -22,10 +19,8 @@ const navStyles = makeStyles({
     padding: '1em 2em',
     color: 'white',
     textDecoration: 'none',
-    background: 'none'
   },
   item:{
-    background: 'none',
     listStyleType: 'none'
   }
 })

@@ -5,25 +5,21 @@ import halibut_cove from '../../Assets/Images/halibut_cove.jpg'
 const useStyles = makeStyles({
     container:{
         display: 'flex',
-        background: 'none'
     },
     main:{
         width: '30%',
         position: 'absolute',
         left: '35vw',
-        background: 'none'
     },
     img:{
         width: '20vw',
         marginTop: '10vh',
         borderRadius: '100%',
-        background: 'none'
     },
     main_text:{
         textAlign: 'center',
         top: '12%',
         color: 'white',
-        background: 'none'
     },
     subTitle:{
         marginTop: '3vh',
@@ -37,7 +33,13 @@ const useStyles = makeStyles({
     },
     left_image:{
         width: '30vw',
-        background: 'none'
+    },
+    bck:{
+        backgroundSize: 'cover',
+        width: '100%',
+        height: '100%',
+        zIndex: -1,
+        position: 'absolute'
     }
   })
 
@@ -45,15 +47,19 @@ const useStyles = makeStyles({
 export const Home = () =>{
     const classes = useStyles();
     return(
-    <div className={classes.container}>
-        <div className={classes.main}>
-            <div className={classes.main_text}>
-                <img src={alaska_portfolio} alt="Alaska Portrait" className={classes.img}/>
-                <p className={classes.subTitle}>I'm Zach</p>
+        <div className={classes.container}>
+            <div className={classes.main}>
+                <div className={classes.main_text}>
+                    <img src={alaska_portfolio} alt="Alaska Portrait" className={classes.img}/>
+                    <p className={classes.subTitle}>I'm Zach</p>
+                </div>
             </div>
         </div>
-        <div>
-
-        </div>
-    </div>
     )}
+
+export const Background = () =>{
+    const classes = useStyles();
+    return(
+        <img src={halibut_cove} className={classes.bck} />
+    )
+}
