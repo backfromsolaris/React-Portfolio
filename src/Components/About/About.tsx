@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/styles";
-import { CardMedia, Card, Typography } from "@material-ui/core";
+import { Switch, Slide, Card, Typography } from "@material-ui/core";
 
 const aboutStyles = makeStyles({
     card_left:{
