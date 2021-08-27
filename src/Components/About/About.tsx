@@ -1,24 +1,29 @@
 import { makeStyles } from "@material-ui/styles";
-import swirl_image from '../../Assets/Images/crossed.svg';
+import { CardMedia, Card, Typography } from "@material-ui/core";
 
 const aboutStyles = makeStyles({
-    intro_left:{
+    card_left:{
         color: 'white',
-        display: 'flex',
         position: 'absolute',
-        justifyContent: 'flex-start',
-        width: '35vw',
-        marginLeft: '3vw',
+        top: '35vh',
+        width: '22vw',
+        marginLeft: '6vw',
+        padding: 10,
+        background: 'rgb(66, 63, 62, 0.5)'
     },
-    intro_right:{
+    card_right:{
         color: 'white',
-        display: 'flex',
-        justifyContent: 'flex-end',
-        marginRight: '3vw',
+        position: 'absolute',
+        left: '70vw',
+        top: '18vh',
+        padding: 10,
+        background: 'rgb(66, 63, 62, 0.5)'
     },
-    heading_left:{
-        marginTop: '-3vh',
-        marginLeft: '5vw',
+    title: {
+        fontSize: 24
+      },
+    items:{
+        justifySelf: 'right'
     },
     heading_right:{
         marginTop: '10vh',
@@ -27,11 +32,6 @@ const aboutStyles = makeStyles({
     heading:{
         textAlign: 'left',
         marginBottom: '5vh',
-    },
-    list_left:{
-        textAlign: 'left',
-        listStyle: 'none',
-        marginTop: '10vh',
     },
     list_right:{
         textAlign: 'left',
@@ -46,36 +46,67 @@ const aboutStyles = makeStyles({
     }
 })
 
-export const About = () =>{
+
+
+export const About_Card_Left = () =>{
     const classes = aboutStyles();
     return(
-        <main>
-            <div className={classes.intro_left}>
-                <div className={classes.heading_left}>
-                    <h2 className={classes.heading}>Professional</h2>
-                    <hr />
-                    <ul className={classes.list_left}>
-                        <li className={classes.list_left}>Full Stack Web Developer</li>
-                        <li className={classes.list_left}>Flask--React--PostgreSQL</li>
-                        <li className={classes.list_left}>Coding Temple Graduate</li>
-                        <li className={classes.list_left}>Background in Management & Culinary Arts</li>
-                    </ul>
-                </div>
-            </div>
-            <div className={classes.intro_right}>
-                <div className={classes.heading_right}>
-                <h2 className={classes.heading}>Personal</h2>
-                <hr />
-                <ul className={classes.list_right}>
-                        <li className={classes.list_right_item}>Currently Residing in Chicago</li>                        
-                        <li className={classes.list_right_item}>Hiking -- Camping -- Cycling -- Climbing</li>
-                        <li className={classes.list_right_item}>Avid Home Cook</li>
-                        <li className={classes.list_right_item}>Reader of Star Wars Expanded Universe</li>
+            <Card elevation={24} className={classes.card_left}>
+                <Typography className={classes.title}>
+                    Professional
+                </Typography>
+                <br />
+                <Typography className={classes.items} variant="body2" component="p">
+                    Full Stack Web Developer
+                </Typography>
+                <br />
+                <Typography className={classes.items} variant="body2" component="p">
+                    React -- Flask -- PostgreSQL
+                </Typography>
+                <br />
+                <Typography className={classes.items} variant="body2" component="p">
+                    Coding Temple Graduate
+                </Typography>
+                <br />
+                <Typography className={classes.items} variant="body2" component="p">
+                    Background in Management & Culinary Arts
+                    </Typography>
+            </Card>
+    )
+}
 
-                    </ul>
-                </div>
-            </div>
-        </main>
-        
+export const About_Card_Right = () =>{
+    const classes = aboutStyles();
+    return(
+            <Card elevation={24} className={classes.card_right}>
+                <Typography className={classes.title}>
+                    Personal
+                </Typography>
+                <br />
+                <Typography className={classes.items} variant="body2" component="p">
+                    Currently in Chicago
+                </Typography>
+                <br />
+                <Typography className={classes.items} variant="body2" component="p">
+                    Hiking -- Camping -- Cycling -- Climbing
+                </Typography>
+                <br />
+                <Typography className={classes.items} variant="body2" component="p">
+                    Avid Home Cook
+                </Typography>
+                <br />
+                <Typography className={classes.items} variant="body2" component="p">
+                    Fan of Star Wars Expanded Universe
+                    </Typography>
+                    
+                    {/* <h2 className={classes.heading}>Personal</h2>
+                    <hr />
+                    <ul className={classes.list_right}>
+                            <li className={classes.list_right_item}>Currently Residing in Chicago</li>                        
+                            <li className={classes.list_right_item}>Hiking -- Camping -- Cycling -- Climbing</li>
+                            <li className={classes.list_right_item}>Avid Home Cook</li>
+                            <li className={classes.list_right_item}>Reader of Star Wars Expanded Universe</li>
+                        </ul> */}
+            </Card>
     )
 }

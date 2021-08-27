@@ -7,10 +7,12 @@ import { makeStyles } from "@material-ui/styles";
 import { Paper, CardMedia, Card, CardContent } from "@material-ui/core";
 
 const projectStyles = makeStyles({
-    div:{
+    card:{
         marginLeft: '5vw',
         marginRight: '25vw',
+        padding: 10,
         width: '25vw',
+        background: 'rgb(66, 63, 62, 0.5)'
     },
     h2:{
         color: 'white',
@@ -33,7 +35,7 @@ const projectStyles = makeStyles({
 export const Projects = () =>{
     const classes = projectStyles();
     return(
-        <div className={classes.div}>
+        <Card elevation={24} className={classes.card}>
             <h2 className={classes.h2}>Projects</h2>
             <hr />
             <div className={classes.grid_container}>
@@ -80,6 +82,6 @@ export const Projects = () =>{
                     />
                 </div> */}
             </div>
-        </div>
+        </Card>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import  { Home, Projects, Navbar, About, Contact, Background } from './Components'
+import  { Home, Projects, Navbar, Contact, Background, About_Card_Left, About_Card_Right } from './Components'
 import reportWebVitals from './reportWebVitals';
 import './styles.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -15,7 +15,8 @@ ReactDOM.render(
           <Projects />
         </Route>
         <Route exact path='/About'>
-          <About />
+          <About_Card_Left />
+          <About_Card_Right />
         </Route>
         <Route exact path='/Contact'>
           <Contact />
