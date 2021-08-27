@@ -11,9 +11,13 @@ const useStyles = makeStyles({
         position: 'absolute',
         left: '35vw',
     },
+    paper:{
+        // width: '20vw',
+        // marginTop: '10vh',
+        borderRadius: '100%',
+        backgroundImage: `url${alaska_portfolio}`
+    },
     img:{
-        width: '20vw',
-        marginTop: '10vh',
         borderRadius: '100%',
     },
     main_text:{
@@ -50,7 +54,7 @@ export const Home = () =>{
         <div className={classes.container}>
             <div className={classes.main}>
                 <div className={classes.main_text}>
-                    <img src={alaska_portfolio} alt="Alaska Portrait" className={classes.img}/>
+                    <img src={alaska_portfolio} className={classes.img}/>
                     <p className={classes.subTitle}>I'm Zach</p>
                 </div>
             </div>

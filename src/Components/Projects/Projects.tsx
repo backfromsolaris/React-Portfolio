@@ -4,6 +4,7 @@ import parking_garage_image from '../../Assets/Images/parking-garage.jpg';
 import weather_api_image from '../../Assets/Images/weather-api.jpg';
 import double_tap_image from '../../Assets/Images/double_tap.jpg';
 import { makeStyles } from "@material-ui/styles";
+import { Paper, CardMedia, Card, CardContent } from "@material-ui/core";
 
 const projectStyles = makeStyles({
     div:{
@@ -79,9 +80,6 @@ export const Projects = () =>{
                     />
                 </div> */}
             </div>
-
-
-
         </div>
     )
 }
