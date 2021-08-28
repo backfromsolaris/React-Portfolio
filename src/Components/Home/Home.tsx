@@ -54,7 +54,8 @@ export const Home = () =>{
         <div className={classes.container}>
             <div className={classes.main}>
                 <div className={classes.main_text}>
-                    <img src={alaska_portfolio} className={classes.img}/>
+                    <img src={alaska_portfolio} 
+                        className={classes.img}/>
                     <p className={classes.subTitle}>I'm Zach</p>
                 </div>
             </div>

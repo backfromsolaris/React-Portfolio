@@ -31,42 +31,49 @@ const projectStyles = makeStyles({
     }
 })
 
+const marvel = 'https://github.com/backfromsolaris/Flask-Marvel'
+const garage = 'https://github.com/backfromsolaris/oop-parking-garage'
+const weather = 'https://github.com/backfromsolaris/JS-API-Weather-App'
+const double_tap = 'https://github.com/backfromsolaris/group_project_1'
 
 export const Projects = () =>{
     const classes = projectStyles();
     return(
         <Card elevation={24} className={classes.card}>
-            <h2 className={classes.h2}>Projects</h2>
+            <h2 className={classes.h2}>My Work</h2>
             <hr />
             <div className={classes.grid_container}>
                 <div className={classes.grid_item}>
                     <Thumbnail 
-                    link="https://github.com/backfromsolaris/Flask-Marvel"
+                    link={marvel}
                     image= {marvel_image}
                     title="Marvel Flask API"
                      />
                 </div>
                 <div className={classes.grid_item}>
                     <Thumbnail 
-                    link="https://github.com/backfromsolaris/oop-parking-garage"
+                    link={garage}
                     image= {parking_garage_image}
                     title="Parking Garage OOP"
                     />
                 </div>
                 <div className={classes.grid_item}>
                     <Thumbnail 
-                    link="https://github.com/backfromsolaris/JS-API-Weather-App"
+                    link={weather}
                     image= {weather_api_image}
                     title="Weather App"
                     />
                 </div>
                 <div className={classes.grid_item}>
                     <Thumbnail 
-                    link="https://github.com/backfromsolaris/group_project_1"
+                    link={double_tap}
                     image= {double_tap_image}
                     title="Group CRM Project"
                     />
                 </div>
+
+{/* create new thumbails with further work */}
+                
                 {/* <div className={classes.grid_item}>
                     <Thumbnail 
                     link=""
@@ -81,6 +88,7 @@ export const Projects = () =>{
                     title=""
                     />
                 </div> */}
+
             </div>
         </Card>
     )

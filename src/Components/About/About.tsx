@@ -1,5 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 import { Switch, Slide, Card, Typography } from "@material-ui/core";
+import React, { useState } from "react";
 
 const aboutStyles = makeStyles({
     card_left:{
@@ -27,22 +28,20 @@ const aboutStyles = makeStyles({
     },
     heading_right:{
         marginTop: '10vh',
-        marginLeft: '5vw',
+        marginLeft: '5vw'
     },
     heading:{
         textAlign: 'left',
-        marginBottom: '5vh',
+        marginBottom: '5vh'
     },
     list_right:{
         textAlign: 'left',
         listStyle: 'none',
         marginTop: '10vh',
-        marginRight: '2vw',
+        marginRight: '2vw'
     },
     list_right_item:{
-        marginTop: '10vh',
-
-        // background: 'rgb(23, 16, 16, 0.6)'
+        marginTop: '10vh'
     }
 })
 
@@ -56,19 +55,27 @@ export const About_Card_Left = () =>{
                     Professional
                 </Typography>
                 <br />
-                <Typography className={classes.items} variant="body2" component="p">
+                <Typography className={classes.items} 
+                    variant="body2" 
+                    component="p">
                     Full Stack Web Developer
                 </Typography>
                 <br />
-                <Typography className={classes.items} variant="body2" component="p">
+                <Typography className={classes.items}
+                    variant="body2" 
+                    component="p">
                     React -- Flask -- PostgreSQL
                 </Typography>
                 <br />
-                <Typography className={classes.items} variant="body2" component="p">
-                    Coding Temple Graduate
+                <Typography className={classes.items} 
+                    variant="body2" 
+                    component="p">
+                    Bootstrap -- Material-UI
                 </Typography>
                 <br />
-                <Typography className={classes.items} variant="body2" component="p">
+                <Typography className={classes.items} 
+                    variant="body2" 
+                    component="p">
                     Background in Management & Culinary Arts
                     </Typography>
             </Card>
@@ -83,30 +90,29 @@ export const About_Card_Right = () =>{
                     Personal
                 </Typography>
                 <br />
-                <Typography className={classes.items} variant="body2" component="p">
+                <Typography className={classes.items} 
+                    variant="body2" 
+                    component="p">
                     Currently in Chicago
                 </Typography>
                 <br />
-                <Typography className={classes.items} variant="body2" component="p">
+                <Typography className={classes.items} 
+                    variant="body2" 
+                    component="p">
                     Hiking -- Camping -- Cycling -- Climbing
                 </Typography>
                 <br />
-                <Typography className={classes.items} variant="body2" component="p">
+                <Typography className={classes.items} 
+                    variant="body2" 
+                    component="p">
                     Avid Home Cook
                 </Typography>
                 <br />
-                <Typography className={classes.items} variant="body2" component="p">
+                <Typography className={classes.items} 
+                    variant="body2" 
+                    component="p">
                     Fan of Star Wars Expanded Universe
                     </Typography>
-                    
-                    {/* <h2 className={classes.heading}>Personal</h2>
-                    <hr />
-                    <ul className={classes.list_right}>
-                            <li className={classes.list_right_item}>Currently Residing in Chicago</li>                        
-                            <li className={classes.list_right_item}>Hiking -- Camping -- Cycling -- Climbing</li>
-                            <li className={classes.list_right_item}>Avid Home Cook</li>
-                            <li className={classes.list_right_item}>Reader of Star Wars Expanded Universe</li>
-                        </ul> */}
             </Card>
     )
 }

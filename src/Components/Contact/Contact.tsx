@@ -41,10 +41,10 @@ export const Contact = () =>{
                 
                 <label className={classes.inputs}>Email</label>
                     <input className={classes.inputs} type="text" />
-                
+
                 <label className={classes.inputs}>Message</label>
-                    <textarea  className={classes.inputs} name="" id="" cols={30} rows={5}></textarea>
-                
+                    <textarea  className={classes.inputs} 
+                        cols={30} rows={5}></textarea>
             </form>
         </div>
     )

@@ -34,16 +34,20 @@ export const Navbar = () =>{
                 <div className={classes.navbar_container}>
                     <ul className={classes.navigation}>
                         <li className={classes.item}>
-                            <Link to='/' className={classes.nav_a}>Home</Link>
+                            <Link to='/' 
+                              className={classes.nav_a}>Home</Link>
                         </li>                        
                         <li className={classes.item}>
-                            <Link to='/About' className={classes.nav_a}>About</Link>
+                            <Link to='/About' 
+                              className={classes.nav_a}>About</Link>
                         </li>
                         <li className={classes.item}>
-                            <Link to='/Projects' className={classes.nav_a}>Projects</Link>
+                            <Link to='/Projects' 
+                              className={classes.nav_a}>My Work</Link>
                         </li>
                         <li className={classes.item}>
-                            <Link to='/Contact' className={classes.nav_a}>Contact</Link>
+                            <Link to='/Contact' 
+                              className={classes.nav_a}>Contact</Link>
                         </li>
                     </ul>
                 </div>

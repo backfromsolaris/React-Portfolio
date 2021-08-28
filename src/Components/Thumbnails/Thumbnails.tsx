@@ -21,6 +21,10 @@ const thumbStyles = makeStyles({
         display: 'flex',
         marginBottom: '5vh',
         background: 'none'
+      },
+      link:{
+          textDecoration:'none',
+          color: 'white',
       }
 })
 
@@ -31,10 +35,14 @@ export const Thumbnail = (props:Props) =>{
         <div className={classes.project}>
                 <div className={classes.project_image}>
                     <a href={props.link}>
-                        <img className={classes.project_image} src={props.image} alt="Project Image" />
+                        <img className={classes.project_image} 
+                            src={props.image} 
+                            alt="Project Image" />
                     </a>
                 </div>
-                <div className={classes.project_title}>{props.title}</div>              
+                <div className={classes.project_title}>
+                    <a href={props.link}
+                        className={classes.link}>{props.title}</a></div>              
         </div>
     );
 }
