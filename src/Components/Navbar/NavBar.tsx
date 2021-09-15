@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { makeStyles } from "@material-ui/styles";
 
 const navStyles = makeStyles({
@@ -43,7 +43,7 @@ export const Navbar = () =>{
                         </li>
                         <li className={classes.item}>
                             <Link to='/Projects' 
-                              className={classes.nav_a}>My Work</Link>
+                              className={classes.nav_a}>Projects</Link>
                         </li>
                         <li className={classes.item}>
                             <Link to='/Contact' 

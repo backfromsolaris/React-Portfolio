@@ -53,9 +53,10 @@ const aboutStyles = makeStyles({
 // 
 
 
-export const About_Card_Left = () =>{
+export const About_Cards = () =>{
     const classes = aboutStyles();
     return(
+        <div>
             <Card elevation={24} className={classes.card_left}>
                 <Typography className={classes.title}>
                     Professional
@@ -85,12 +86,7 @@ export const About_Card_Left = () =>{
                     Background in Management & Culinary Arts
                     </Typography>
             </Card>
-    )
-}
 
-export const About_Card_Right = () =>{
-    const classes = aboutStyles();
-    return(
             <Card elevation={24} className={classes.card_right}>
                 <Typography className={classes.title}>
                     Personal
@@ -120,5 +116,7 @@ export const About_Card_Right = () =>{
                     Fan of Star Wars Expanded Universe
                     </Typography>
             </Card>
+        </div>
+            
     )
 }

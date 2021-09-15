@@ -41,7 +41,7 @@ export const Projects = () =>{
     const classes = projectStyles();
     return(
         <Card elevation={24} className={classes.card}>
-            <h2 className={classes.h2}>My Work</h2>
+            <h2 className={classes.h2}>Projects</h2>
             <hr />
             <div className={classes.grid_container}>
                 <div className={classes.grid_item}>
