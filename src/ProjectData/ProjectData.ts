@@ -11,7 +11,7 @@ export const ProjectData = [
         {
             title: 'Mos Eisley Archives',
             image: mos_eisley,
-            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui doloremque animi itaque doloribus consequuntur ipsum totam at autem harum aliquam. Officia cupiditate exercitationem, dolor alias sapiente architecto obcaecati esse possimus?',
+            description: 'This application aims to mimic a sort of digital forum and database for patrons to share messages about the happenings around the cantina, but also offers realistic usability to the user (that is, the real humans accessing this page, not just fictional) by allowing access to a database in order to store favorite Star Wars novels with various book details attached. Basic authentication and a fun side game with a local parts merchant make for an interactive and also functional hub with plenty of touches straight from the saga.',
             technologies: 'HTML, CSS, Python, TypeScript, React-Redux, Flask, PostgreSQL, Material-UI',
             github_link: 'https://github.com/zachPorras/mos-eisley-hosted',
             hosted_link: 'https://mos-eisley-archives.herokuapp.com/'

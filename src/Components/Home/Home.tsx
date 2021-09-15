@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     main_text:{
         textAlign: 'center',
         top: '12%',
-        color: 'white',
+        color: 'lightgrey',
     },
     subTitle:{
         marginTop: '3vh',

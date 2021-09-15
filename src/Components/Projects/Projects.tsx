@@ -5,22 +5,24 @@ import { Button,
     CardActionArea, 
     CardContent, 
     CardActions, 
+    Divider,
     Typography } from "@material-ui/core";
-import mos_eisley from '../../Assets/Images/mos_eisley.jpg';
 import { useState } from "react";
 import { ProjectData } from "../../ProjectData/ProjectData";
+import github from '../../Assets/Images/github-white.png';
 
 
 const projectStyles = makeStyles({
     card:{
         marginLeft: '5vw',
         marginRight: '25vw',
-        padding: 10,
+        padding: 3,
         width: '25vw',
         background: 'rgb(66, 63, 62, 0.5)'
     },
     white: {
-        color: 'white'
+        color: 'lightgrey',
+        textDecoration: 'none'
     },
     grid_container:{
         display: 'grid',
@@ -36,15 +38,23 @@ const projectStyles = makeStyles({
     media: {
         height: 140
     },
+    divider: {
+        backgroundColor: 'grey',
+        marginBottom: '.5rem'
+    },
+    technologies: {
+        color: 'grey',
+        fontStyle: 'italic'
+    },
     project_media:{
         color: 'white',
         position: 'absolute',
         left: '67vw',
         top: '30vh',
-        padding: 10,
-        background: 'rgb(66, 63, 62, 0.5)',
+        padding: 5,
         height: 'auto',
-        width: '23rem'
+        width: '23rem',
+        background: 'rgb(66, 63, 62, 0.5)'
     },
     project_img: {
         maxHeight: '100%',
@@ -53,13 +63,12 @@ const projectStyles = makeStyles({
 })
 
 
-export const Projects = () =>{
+export const Projects = () =>{ 
     const classes = projectStyles();
-    const [project, changeProject] = useState<any>(ProjectData);
+    let [index, setIndex] = useState<number>(0);
+    const project = ProjectData
 
-    // const nextProject = () => {
-    //     changeProject()
-    // }
+
 
     return(
         <div>
@@ -71,30 +80,56 @@ export const Projects = () =>{
           variant="h5" 
           className={classes.white} 
           component="h2">
-            {project[0].title}
+            {project[index].title}
           </Typography>
-          <Typography gutterBottom variant="body2" className={classes.white} component="p">
-          {project[0].technologies}
+          <Divider className={classes.divider}/>
+          <Typography 
+            gutterBottom 
+            variant="body2" 
+            className={classes.technologies} 
+            component="p">
+            {project[index].technologies}
           </Typography>
           <Typography variant="body2" className={classes.white} component="p">
-          {project[0].description}
+          {project[index].description}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button className={classes.white} size="small">
-          Github
+          <a 
+          href={project[index].github_link} 
+          target="_blank"><img src={github} 
+          alt="github icon" /></a>
         </Button>
+        {project[index].hosted_link != '' ? 
+        (
         <Button className={classes.white} size="small">
-          Deployment
+            <a 
+            href={project[index].hosted_link} 
+            target="_blank" 
+            className={classes.white}>Deployment</a>
         </Button>
-        {/* <Button onClick={nextProject} className={classes.white} size="small">
+        ):(
+            null
+        )}
+        <Button onClick={()=>setIndex(
+            index > 0 ? (index-1):(index = project.length-1))}
+            className={classes.white} size="small">
+          Prev
+        </Button>
+        <Button onClick={()=>setIndex(
+            index < project.length-1 ? (index+1):(index = 0))}
+            className={classes.white} size="small">
           Next
-        </Button> */}
+        </Button>
       </CardActions>
     </Card>
     <Card className={classes.project_media}>
-        <img className={classes.project_img} src={mos_eisley} alt="project image" />
+        <img 
+        className={classes.project_img} 
+        src={project[index].image} 
+        alt="project image" />
     </Card>
         </div>
 
