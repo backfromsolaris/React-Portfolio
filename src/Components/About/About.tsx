@@ -46,6 +46,12 @@ const aboutStyles = makeStyles({
 })
 
 
+// to do:
+// continue edits on text (reference linkedIn)
+// style text further: differentiate between title & body/p
+// animation!!!  slide in from sides? or something else...
+// 
+
 
 export const About_Card_Left = () =>{
     const classes = aboutStyles();
