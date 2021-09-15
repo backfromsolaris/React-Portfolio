@@ -1,10 +1,12 @@
-import { Thumbnail } from "../Thumbnails";
-import marvel_image from '../../Assets/Images/marvel_homies.jpg';
-import parking_garage_image from '../../Assets/Images/parking-garage.jpg';
-import weather_api_image from '../../Assets/Images/weather-api.jpg';
-import double_tap_image from '../../Assets/Images/double_tap.jpg';
 import { makeStyles } from "@material-ui/styles";
-import { Paper, CardMedia, Card, CardContent } from "@material-ui/core";
+import { Button, 
+    CardMedia, 
+    Card, 
+    CardActionArea, 
+    CardContent, 
+    CardActions, 
+    Typography } from "@material-ui/core";
+import mos_eisley from '../../Assets/Images/mos_eisley.jpg';
 
 const projectStyles = makeStyles({
     card:{
@@ -14,9 +16,8 @@ const projectStyles = makeStyles({
         width: '25vw',
         background: 'rgb(66, 63, 62, 0.5)'
     },
-    h2:{
-        color: 'white',
-        marginBottom: '5vh',
+    white: {
+        color: 'white'
     },
     grid_container:{
         display: 'grid',
@@ -28,69 +29,67 @@ const projectStyles = makeStyles({
     },
     grid_item:{
         fontSize: '.9em',
+    },
+    media: {
+        height: 140
+    },
+    project_media:{
+        color: 'white',
+        position: 'absolute',
+        left: '67vw',
+        top: '30vh',
+        padding: 10,
+        background: 'rgb(66, 63, 62, 0.5)',
+        height: 'auto',
+        width: '23rem'
+    },
+    project_img: {
+        maxHeight: '100%',
+        maxWidth: '100%'
     }
 })
 
 
-const marvel = 'https://github.com/backfromsolaris/Flask-Marvel'
-const garage = 'https://github.com/backfromsolaris/oop-parking-garage'
-const weather = 'https://github.com/backfromsolaris/JS-API-Weather-App'
-const double_tap = 'https://github.com/backfromsolaris/group_project_1'
-
 export const Projects = () =>{
     const classes = projectStyles();
     return(
-        <Card elevation={24} className={classes.card}>
-            <h2 className={classes.h2}>Projects</h2>
-            <hr />
-            <div className={classes.grid_container}>
-                <div className={classes.grid_item}>
-                    <Thumbnail 
-                    link={marvel}
-                    image= {marvel_image}
-                    title="Marvel Flask API"
-                     />
-                </div>
-                <div className={classes.grid_item}>
-                    <Thumbnail 
-                    link={garage}
-                    image= {parking_garage_image}
-                    title="Parking Garage OOP"
-                    />
-                </div>
-                <div className={classes.grid_item}>
-                    <Thumbnail 
-                    link={weather}
-                    image= {weather_api_image}
-                    title="Weather App"
-                    />
-                </div>
-                <div className={classes.grid_item}>
-                    <Thumbnail 
-                    link={double_tap}
-                    image= {double_tap_image}
-                    title="Group CRM Project"
-                    />
-                </div>
+        <div>
+        <Card className={classes.card}>
+      <CardActionArea>
+        <CardContent>
+          <Typography 
+          gutterBottom 
+          variant="h5" 
+          className={classes.white} 
+          component="h2">
+            Lizard
+          </Typography>
+          <Typography gutterBottom variant="body2" className={classes.white} component="p">
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            across all continents except Antarctica
+          </Typography>
+          <Typography variant="body2" className={classes.white} component="p">
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button className={classes.white} size="small">
+          Github
+        </Button>
+        <Button className={classes.white} size="small">
+          Deployment
+        </Button>
+        <Button className={classes.white} size="small">
+          Next
+        </Button>
+      </CardActions>
+    </Card>
+    <Card className={classes.project_media}>
+        <img className={classes.project_img} src={mos_eisley} alt="project image" />
+    </Card>
+        </div>
 
-{/* create new thumbails with further work */}
-                
-                {/* <div className={classes.grid_item}>
-                    <Thumbnail 
-                    link=""
-                    image= {}
-                    title=""
-                    />
-                </div>
-                <div className={classes.grid_item}>
-                    <Thumbnail 
-                    link=""
-                    image= {}
-                    title=""
-                    />
-                </div> */}
-
-            </div>
-        </Card>
     )
 }

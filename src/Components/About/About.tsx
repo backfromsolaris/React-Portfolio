@@ -1,6 +1,5 @@
 import { makeStyles } from "@material-ui/styles";
-import { Switch, Slide, Card, Typography } from "@material-ui/core";
-import React, { useState } from "react";
+import { Card, Typography } from "@material-ui/core";
 
 const aboutStyles = makeStyles({
     card_left:{
