@@ -7,6 +7,9 @@ import { Button,
     CardActions, 
     Typography } from "@material-ui/core";
 import mos_eisley from '../../Assets/Images/mos_eisley.jpg';
+import { useState } from "react";
+import { ProjectData } from "../../ProjectData/ProjectData";
+
 
 const projectStyles = makeStyles({
     card:{
@@ -52,6 +55,12 @@ const projectStyles = makeStyles({
 
 export const Projects = () =>{
     const classes = projectStyles();
+    const [project, changeProject] = useState<any>(ProjectData);
+
+    // const nextProject = () => {
+    //     changeProject()
+    // }
+
     return(
         <div>
         <Card className={classes.card}>
@@ -62,15 +71,13 @@ export const Projects = () =>{
           variant="h5" 
           className={classes.white} 
           component="h2">
-            Lizard
+            {project[0].title}
           </Typography>
           <Typography gutterBottom variant="body2" className={classes.white} component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          {project[0].technologies}
           </Typography>
           <Typography variant="body2" className={classes.white} component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          {project[0].description}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -81,9 +88,9 @@ export const Projects = () =>{
         <Button className={classes.white} size="small">
           Deployment
         </Button>
-        <Button className={classes.white} size="small">
+        {/* <Button onClick={nextProject} className={classes.white} size="small">
           Next
-        </Button>
+        </Button> */}
       </CardActions>
     </Card>
     <Card className={classes.project_media}>
