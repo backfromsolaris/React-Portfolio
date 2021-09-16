@@ -19,6 +19,7 @@ const useStyles = makeStyles({
     },
     img:{
         borderRadius: '100%',
+        height: '300px'
     },
     main_text:{
         textAlign: 'center',
