@@ -51,7 +51,7 @@ const projectStyles = makeStyles({
     },
     description: {
         color: 'white',
-        marginTop: '2rem'
+        marginTop: '1rem'
     },
     actions: {
         position: 'absolute',

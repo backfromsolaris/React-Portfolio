@@ -9,23 +9,32 @@ createStyles({
         borderRadius: '4px'
       },
     form_div:{
-        width: '25ch',
+        width: '25vw',
         position: 'absolute',
-        right: '4vw',
-        top: '25vh',
+        left: '12vw',
+        top: '35vh',
         color: 'white',
         },
     header:{
         marginBottom: '5vh',
-        color: 'white',
+        color: 'lightgrey',
+        fontSize: '2.5rem'
     },
-    inputs:{
-        color: 'white'
+    items: {
+        textDecoration: 'none',
+        color: 'lightgrey',
+        fontSize: '2rem'
     },
-    inputsMessage:{
-        color: 'white',
-        lineHeight: '10vh',
-        textAlign: 'start'
+    thanks_div: {
+        width: '20rem',
+        position: 'absolute',
+        right: '4rem',
+        top: '9rem',
+    },
+    thanks: {
+        position: 'absolute',
+        fontSize: '2.5rem',
+        color: 'lightgrey'
     }
 }));
 
@@ -33,19 +42,17 @@ createStyles({
 export const Contact = () =>{
     const classes = useStyles();
     return(
-        <div className={classes.form_div}>
-            <h2 className={classes.header}>Contact Me</h2>
-            <form className={classes.root}>
-                <label className={classes.inputs}>Name</label>
-                    <input className={classes.inputs} type="text" />
-                
-                <label className={classes.inputs}>Email</label>
-                    <input className={classes.inputs} type="text" />
-
-                <label className={classes.inputs}>Message</label>
-                    <textarea  className={classes.inputs} 
-                        cols={30} rows={5}></textarea>
-            </form>
+        <div>
+            <div className={classes.form_div}>
+                <h2 className={classes.header}>Contact Me</h2>
+                <a target="_blank" className={classes.items} href="mailto:porraszach@gmail.com">Email</a><br/><br/>
+                <a target="_blank" className={classes.items} href="https://www.linkedin.com/in/zachporras/">LinkedIn</a><br/><br/>
+                <a target="_blank" className={classes.items} href="https://github.com/zachPorras">GitHub</a>
+            </div>
+            <div className={classes.thanks_div}>
+                <h2 className={classes.thanks}>Let me know how I can meet your needs!</h2>
+            </div>
         </div>
+        
     )
 }

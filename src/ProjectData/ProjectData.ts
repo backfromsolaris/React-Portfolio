@@ -11,7 +11,7 @@ export const ProjectData = [
         {
             title: 'Mos Eisley Archives',
             image: mos_eisley,
-            description: "A Star Wars fan's homage to the saga, crafted within a full-stack application, utilizing Flask to route authentication and other data stored on a PostgreSQL database, and React-Redux utilized for the front-end. A combination of fictional forum posts about a cantina on the planet Tattooine, with a page to store Star Wars books and their details.",
+            description: "A Star Wars fan's homage to the saga, crafted within a full-stack application, utilizing Flask to route authentication and other data stored on a PostgreSQL database, and React-Redux utilized for the front-end. A combination of fictional forum posts about a cantina on the planet Tattooine, with a page to store Star Wars books and their details.\nThis project could potentially evolve in many different directions, one of which being an educational UX for adults and/or children to learn abou the Star Wars universe.",
             technologies: 'HTML, CSS, Python, TypeScript, React-Redux, Flask, PostgreSQL, Material-UI',
             github_link: 'https://github.com/zachPorras/mos-eisley-hosted',
             hosted_link: 'https://mos-eisley-archives.herokuapp.com/'
