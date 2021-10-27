@@ -64,26 +64,31 @@ export const About_Cards = () =>{
                 <Typography className={classes.items} 
                     variant="body2" 
                     component="p">
-                    Full Stack Web Developer
+                    Full Stack Sotware Engineer
                 </Typography>
                 <br />
                 <Typography className={classes.items}
                     variant="body2" 
                     component="p">
-                    React -- Flask -- PostgreSQL
+                    Python -- JavaScript -- PostgreSQL
                 </Typography>
                 <br />
                 <Typography className={classes.items} 
                     variant="body2" 
                     component="p">
-                    Bootstrap -- Material-UI
+                    Flask -- React.js
                 </Typography>
                 <br />
                 <Typography className={classes.items} 
                     variant="body2" 
                     component="p">
                     Background in Management & Culinary Arts
-                    </Typography>
+                </Typography>
+                <Typography className={classes.items} 
+                    variant="body2" 
+                    component="p">
+                    Coding Temple Full-Stack Development Bootcamp Graduate
+                </Typography>
             </Card>
 
             <Card elevation={24} className={classes.card_right}>

@@ -50,7 +50,7 @@ export const Contact = () =>{
                 <a target="_blank" className={classes.items} href="https://github.com/zachPorras">GitHub</a>
             </div>
             <div className={classes.thanks_div}>
-                <h2 className={classes.thanks}>Let me know how I can meet your needs!</h2>
+                <h2 className={classes.thanks}>I'm eager to contribute to your success!</h2>
             </div>
         </div>
         
