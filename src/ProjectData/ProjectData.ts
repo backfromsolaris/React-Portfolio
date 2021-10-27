@@ -5,6 +5,7 @@ import roi_calc from '../Assets/Images/roi_calc.jpg';
 import double_tap from '../Assets/Images/double_tap.jpg';
 import movie from '../Assets/Images/movie.jpg';
 import parking from '../Assets/Images/parking-garage.jpg';
+import selenium from '../Assets/Images/sw_selenium.jpg'
 
 
 export const ProjectData = [
@@ -17,12 +18,20 @@ export const ProjectData = [
             hosted_link: 'https://mos-eisley-archives.herokuapp.com/'
         },
         {
+            title: 'SW Selenium',
+            image: selenium,
+            description: "This program utilizes Selenium web scraper to find information about Star Wars books from Youtini.com, a website dedicated to the Star Wars Expanded Universe aka EU.",
+            technologies: 'Python, Selenium',
+            github_link: 'https://github.com/zachPorras/SW-selenium',
+            hosted_link: ''
+        },
+        {
             title: 'Weather App',
             image: weather,
             description: 'Single page application with exposure to two 3rd party APIs. Two separate forms allow users to either enter a US zip code, or a city/neighborhood and state/city/country combination. The app simultaneously loads current weather data from OpenWeatherMap API, and also a local satellite aerial map from Bing Maps API.',
             technologies: 'HTML, CSS, JavaScript, Bootstrap',
             github_link: 'https://github.com/zachPorras/JS-API-Weather-App',
-            hosted_link: ''
+            hosted_link: 'https://rain-or-shine-weather.herokuapp.com/'
         },
         {
             title: 'Marvel Heroes',
